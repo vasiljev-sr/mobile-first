@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+
+*:not(svg *) {
+  all: unset;
+  display: revert;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  margin: 0;
+  font-family: 'Seymour One', sans-serif;
+  background: url(images/image1.png) no-repeat center center fixed;
+  background-size: cover;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+  text-align: center;
+  word-break: break-word;
+
+
+
 }
+
+
+
+@media all and (min-width: 1220px) {
+  body {
+    background: url(images/image3.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+@media all and (min-width: 988px) and (max-width: 1219px) {
+  body {
+    background: url(images/image2.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+
