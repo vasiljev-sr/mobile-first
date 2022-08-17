@@ -2,15 +2,17 @@ import React from 'react';
 import './App.css';
 import {useAdaptive} from '../hooks'
 import {MobileHeader} from "../Header/MobileHeader";
+import {TabletHeader} from "../Header/TabletHeader";
+import {DesktopHeader} from "../Header/DesktopHeader";
 
 
 function App() {
   const {isDesktop, isMobile, idTablet} = useAdaptive()
   return (
     <div className="App">
-      {isDesktop && <h1>Desktop</h1>}
+      {isDesktop && <DesktopHeader/>}
       {isMobile && <MobileHeader/>}
-      {idTablet && <h1>Desktop</h1>}
+      {idTablet && <TabletHeader/>}
       <div className="container">
         <div className="content"><p className="title">Путешествовать</p>
           <p className='title'>-круто!</p>
