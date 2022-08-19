@@ -29,7 +29,7 @@ export const useAdaptive = (): { isMobile: boolean; isDesktop: boolean, idTablet
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [handleResize]);
 
   return {
     isMobile: version === Version.mobile,
